@@ -9,6 +9,7 @@ class User {
     private int $credit_card;
     private string $credit_card_expiration_date;
     private string $message_card = '';
+    public int $discount = 0;
 
 
     public function __construct($name, $surname, $phone_number, $address, $credit_card, $credit_card_expiration_date)
