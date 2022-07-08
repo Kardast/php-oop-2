@@ -25,9 +25,12 @@ class User {
     public function check_card(){
 
         date_default_timezone_set('Europe/Rome');
-        $date = date('m/d/Y');
+        $date = strtotime(date('m/d/Y'));
         echo $date;
-        if ($date >= $this->credit_card_expiration_date) {
+        $card_date = strtotime($this->credit_card_expiration_date);
+        echo "<br> $card_date";
+
+        if ($date >= $card_date) {
             $this->message_card = 'Carta di credito non valida';
         } else {
             $this->message_card = 'Carta di credito valida';

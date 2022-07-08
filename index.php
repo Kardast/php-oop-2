@@ -16,5 +16,5 @@ $prodotto_kennel = new Kennels('doghouse', 3000, 'sdsfd54dsf564', 'canicanicanic
 var_dump($prodotto_kennel);
 
 
-$prodotto_user = new User('pippo', 'pipposo', 123456789, 'pizza ciao', 456813458, '10/10/2019', 'legno', '500m');
+$prodotto_user = new User('pippo', 'pipposo', 123456789, 'pizza ciao', 456813458, '10/10/2023', 'legno', '500m');
 var_dump($prodotto_user);
